@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD MEGA MERIAH! 🎉💖</title>
+    <style>
+        /* TEMA ULTRA MEGA MERIAH & HEBOH */
+        body {
+            margin: 0;
+            padding: 0;
+            /* Latar belakang dasar */
+            background-color: #ffeef2;
+            /* Lapisan 1: Gradasi warna-warni berdenyut */
+            background-image: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 30%, #fbc2eb 60%, #a18cd1 100%);
+            background-size: 400% 400%;
+            animation: rainbowShift 10s ease infinite;
+            
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animasi Latar Belakang Rainbow */
+        @keyframes rainbowShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- DEKORASI LATAR BELAKANG HEBOH --- */
+
+        /* Teks HBD Gede di Belakang */
+        .bg-text {
+            position: absolute;
+            font-size: 20vw;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.15);
+            z-index: 0;
+            user-select: none;
+            pointer-events: none;
+            animation: pulseText 3s infinite ease-in-out;
+        }
+        .bg-text.left { left: -5%; top: 20%; transform: rotate(-15deg); }
+        .bg-text.right { right: -5%; bottom: 20%; transform: rotate(15deg); }
+
+        @keyframes pulseText {
+            0%, 100% { opacity: 0.1; transform: scale(1) rotate(-15deg); }
+            50% { opacity: 0.2; transform: scale(1.05) rotate(-10deg); }
+        }
+
+        /* Bendera Pesta Gantung (Bunting) */
+        .bunting {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-image: url('https://img.icons8.com/color/96/bunting-flag.png');
+            background-repeat: repeat-x;
+            background-size: contain;
+            z-index: 5;
+            opacity: 0.8;
+        }
+
+        /* Container Utama dengan Border Glitter Berkedip */
+        .card {
+            background: rgba(255, 255, 255, 0.97);
+            border: 10px solid;
+            border-image: linear-gradient(45deg, #ff6b8b, #ffeead, #6bffff, #ff6b8b) 1;
+            border-radius: 30px;
+            padding: 40px;
+            width: 90%;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(255, 20, 147, 0.6);
+            position: relative;
+            z-index: 10;
+            animation: cardPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden; /* Untuk kembang api lokal */
+        }
+
+        @keyframes cardPop {
+            0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        /* Ikon Atas Goyang Heboh */
+        .header-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .icon-cute {
+            width: 70px;
+            height: auto;
+            animation: wobbleCrazy 1.5s infinite linear;
+        }
+        .icon-cute.delay {
+            animation-delay: 0.3s;
+        }
+
+        @keyframes wobbleCrazy {
+            0%, 100% { transform: rotate(-10deg) scale(1); }
+            50% { transform: rotate(10deg) scale(1.1); }
+        }
+
+        /* Teks Judul Dugem */
+        h1 {
+            color: #ff1493;
+            font-size: 32px;
+            margin: 0 0 10px;
+            text-shadow: 3px 3px 0px rgba(255, 107, 139, 0.3);
+            background: linear-gradient(45deg, #ff6b8b, #ff1493, #ff6b8b);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shineText 2s linear infinite;
+        }
+
+        @keyframes shineText {
+            to { background-position: 200% center; }
+        }
+
+        /* Bingkai Foto Bulat Gede */
+        .photo-container {
+            width: 230px;
+            height: 230px;
+            margin: 15px auto;
+            border-radius: 50%;
+            border: 10px solid #ff8da1;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Efek Kilau Shine Super Bright */
+        .photo-container::after {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: linear-gradient(45deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(45deg);
+            animation: shineFast 2s infinite;
+        }
+
+        @keyframes shineFast {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        /* Teks Ucapan Bold */
+        p#ucapan {
+            color: #333;
+            font-size: 19px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px #fff;
+        }
+
+        /* Tombol Pelangi Interaktif */
+        .btn {
+            background: linear-gradient(45deg, #ff4081, #ff6b8b, #ffebbc, #ff4081);
+            background-size: 300% 100%;
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(255, 64, 129, 0.5);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: buttonPulse 1.5s infinite;
+        }
+
+        @keyframes buttonPulse {
+            0% { background-position: 0% 50%; box-shadow: 0 10px 20px rgba(255, 64, 129, 0.5); }
+            50% { background-position: 100% 50%; box-shadow: 0 15px 30px rgba(255, 64, 129, 0.8); transform: scale(1.03); }
+            100% { background-position: 0% 50%; box-shadow: 0 10px 20px rgba(255, 64, 129, 0.5); }
+        }
+
+        .btn:active {
+            transform: translateY(4px) scale(0.97);
+        }
+
+        /* --- ANIMASI DEKORASI JATUH & TERBANG --- */
+
+        /* Confetti Bulat */
+        .confetti {
+            position: absolute;
+            opacity: 0.9;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(720deg); }
+        }
+
+        /* Elemen Latar Belakang Terbang (Banyak & Heboh) */
+        .floating-deco {
+            position: absolute;
+            animation: floatUpHEBOH 8s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes floatUpHEBOH {
+            0% { transform: translateY(110vh) translateX(0) rotate(0deg) scale(0.5); opacity: 0; }
+            10% { opacity: 0.7; scale: 1; }
+            50% { transform: translateY(50vh) translateX(-30px) rotate(180deg) scale(1.2); }
+            90% { opacity: 0.7; scale: 1; }
+            100% { transform: translateY(-15vh) translateX(30px) rotate(360deg) scale(0.5); opacity: 0; }
+        }
+
+        /* --- KEMBANG API LOKAL DI DALAM KARTU --- */
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 11;
+            opacity: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Bendera Pesta Gantung -->
+    <div class="bunting"></div>
+
+    <!-- Teks HBD di Latar Belakang -->
+    <div class="bg-text left">HBD</div>
+    <div class="bg-text right">HBD</div>
+
+    <!-- Wadah Dekorasi Latar Belakang Heboh -->
+    <div id="bg-decoration"></div>
+
+    <div class="card" id="mainCard">
+        <div class="header-icons">
+            <img class="icon-cute" src="https://img.icons8.com/color/120/birthday-cake.png" alt="Kue Ultah">
+            <img class="icon-cute delay" src="https://img.icons8.com/color/120/balloons.png" style="width: 80px;" alt="Balon Heboh">
+            <img class="icon-cute" src="https://img.icons8.com/color/120/party-loudspeaker.png" alt="Toa Pesta">
+        </div>
+        
+        <h1>HAPPY BIRTHDAY!! 🎂</h1>
+        
+        <!-- TEMPAT FOTO -->
+        <div class="photo-container">
+            <!-- GANTI "foto-kamu.jpg" dengan nama file fotomu -->
+            <img src="bubub.jpeg" alt="Foto Ulang Tahun" onerror="this.src='https://placehold.co/230x230/ff6b8b/ffffff?text=FOTO+MERIAH'">
+        </div>
+
+        <p id="ucapan">Waaaah! Selamat ulang tahun ya! Semoga harimu MEGA DUUPER ceria, penuh kejutan manis, dan semua keinginanmu terkabul! 💖✨🎁</p>
+
+        <button class="btn" onclick="startMEGA_Celebration()">KLIK UNTUK KEJUTAN TOTAL!!! 🎉</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            createBackgroundEffects();
+        };
+
+        function createBackgroundEffects() {
+            const container = document.getElementById('bg-decoration');
+            
+            // Link gambar dekorasi ultah yang lucu dan banyak
+            const decoImages = [
+                'https://img.icons8.com/color/96/balloons.png',
+                'https://img.icons8.com/color/96/birthday-hat.png',
+                'https://img.icons8.com/color/96/gift.png',
+                'https://img.icons8.com/color/96/teddy-bear.png',
+                'https://img.icons8.com/color/96/wrapped-gift.png',
+                'https://img.icons8.com/color/96/confetti.png',
+                'https://img.icons8.com/color/96/lollipop.png',
+                'https://img.icons8.com/color/96/star--v1.png'
+            ];
+            
+            // MEMPERBANYAK ELEMEN TERBANG (HEBOH)
+            for (let i = 0; i < 25; i++) {
+                const deco = document.createElement('img');
+                deco.src = decoImages[Math.floor(Math.random() * decoImages.length)];
+                deco.className = 'floating-deco';
+                deco.style.left = Math.random() * 95 + 'vw';
+                deco.style.animationDelay = Math.random() * 8 + 's';
+                deco.style.animationDuration = (Math.random() * 5 + 6) + 's'; 
+                // Variasi ukuran yang lebih ekstrim
+                deco.style.width = (Math.random() * 30 + 30) + 'px'; 
+                container.appendChild(deco);
+            }
+
+            // Buat Confetti Jatuh kontinu (diperbanyak)
+            for (let i = 0; i < 80; i++) {
+                createConfetti(false);
+            }
+        }
+
+        function createConfetti(isExplosion) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            
+            // Palet warna neon & ceria
+            const colors = ['#ff4081', '#ff6b8b', '#ffeead', '#6bffff', '#ffae19', '#b57cff', '#32cd32', '#ffff00'];
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            if (isExplosion) {
+                // LEDAKAN DAHSYAT
+                confetti.style.left = '50%';
+                confetti.style.top = '50%';
+                // Ukuran acak saat ledakan
+                const size = Math.random() * 8 + 8;
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                
+                const angle = Math.random() * Math.PI * 2;
+                // Kecepatan & jangkauan ledakan ditambah
+                const velocity = Math.random() * 400 + 150;
+                const destX = Math.cos(angle) * velocity;
+                const destY = Math.sin(angle) * velocity;
+                
+                confetti.animate([
+                    { transform: 'translate(-50%, -50%) translate(0, 0) rotate(0deg)', opacity: 1 },
+                    { transform: `translate(-50%, -50%) translate(${destX}px, ${destY}px) rotate(${Math.random()*720}deg)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 1500 + 1500,
+                    easing: 'cubic-bezier(0.1, 0.8, 0.3, 1)' // Ease out yang mulus
+                });
+                
+                setTimeout(() => confetti.remove(), 3000);
+            } else {
+                // Jatuh biasa (acakan ukuran & kecepatan)
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = -20 + 'px';
+                const size = Math.random() * 8 + 6;
+                confetti.style.width = size + 'px';
+                confetti.style.height = size + 'px';
+                confetti.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                confetti.style.animationDelay = Math.random() * 7 + 's';
+            }
+            
+            document.body.appendChild(confetti);
+        }
+
+        // KEMBANG API VISUAL SEDERHANA DI DALAM KARTU
+        function launchFirework(card) {
+            const colors = ['#ff4081', '#6bffff', '#ffff00', '#32cd32'];
+            const startX = Math.random() * 80 + 10; // % inside card
+            const startY = Math.random() * 50 + 20; // % inside card
+
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'firework';
+                particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                particle.style.left = startX + '%';
+                particle.style.top = startY + '%';
+                card.appendChild(particle);
+
+                const angle = Math.random() * Math.PI * 2;
+                const velocity = Math.random() * 60 + 30;
+                const destX = Math.cos(angle) * velocity;
+                const destY = Math.sin(angle) * velocity;
+
+                particle.animate([
+                    { transform: 'translate(0, 0)', opacity: 1 },
+                    { transform: `translate(${destX}px, ${destY}px)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 500 + 800,
+                    easing: 'ease-out'
+                });
+
+                setTimeout(() => particle.remove(), 1300);
+            }
+        }
+
+        function startMEGA_Celebration() {
+            // Ubah teks ucapan
+            document.getElementById('ucapan').innerHTML = "<b>CIEEEEE! MAKIN TUA MAKIN KECE! 🥳🎉</b><br>Met ultah ya Mputt yg cantik! Semoga panjang umur, sehat selalu, banyak rejeki, tetap imut, manis, bahagia, jgn sampe ada kesedihan nantinya POKOKNYA WISH YOU ALL THE BEST! 🎂🎈🎁✨🤍";
+            
+            // Efek ledakan confetti MASSAL (Jumlah ditambah drastis)
+            for (let i = 0; i < 250; i++) {
+                createConfetti(true);
+            }
+
+            // Luncurkan kembang api lokal di dalam kartu beberapa kali
+            const card = document.getElementById('mainCard');
+            launchFirework(card);
+            setTimeout(() => launchFirework(card), 300);
+            setTimeout(() => launchFirework(card), 600);
+            
+            // Efek getar kartu
+            card.animate([
+                { transform: 'translate(1px, 1px) rotate(0deg)' },
+                { transform: 'translate(-1px, -2px) rotate(-1deg)' },
+                { transform: 'translate(-3px, 0px) rotate(1deg)' },
+                { transform: 'translate(3px, 2px) rotate(0deg)' },
+                { transform: 'translate(1px, -1px) rotate(1deg)' }
+            ], {
+                duration: 500,
+                iterations: 1
+            });
+        }
+    </script>
+
+</body>
+</html>
